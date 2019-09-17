@@ -1,4 +1,11 @@
 # goconvey
+测试方法：
+```bash
+go test -v
+```
+里面的核心是利用go testing包进行各种测试  
+
+## goconvey的环境搭建 
 下是搭建好了环境以后，使用的过程和开发的时候-遇到的一些坑。
 
 安装golang测试框架
@@ -6,7 +13,7 @@
 go get github.com/smartystreets/goconvey
 ```
 
-下载后，在github.com/smartystreets/goconvey 目录下运行goconvey.exe文件。  
+下载后，在`github.com/smartystreets/goconvey` 目录下运行`goconvey.exe`文件。  
 
 出来的cmd命令页面不要关闭，否则会中断测试。  
 
@@ -15,7 +22,7 @@ go get github.com/smartystreets/goconvey
 测试用例必须带_test后缀，否则系统无法检测到你的测试用例。  
 
 半自动化书写测试用例 通过生成测试所用的单元测试  
-[链接地址](http://localhost:8080/composer.html)
+[链接地址: http://localhost:8080/composer.html](http://localhost:8080/composer.html)
 
 ```golang
     Convey("API ", t, func() {
